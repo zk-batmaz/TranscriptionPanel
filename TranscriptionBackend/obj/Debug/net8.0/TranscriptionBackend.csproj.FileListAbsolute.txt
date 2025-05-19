@@ -339,3 +339,4 @@ C:\Users\ZKB\transcriptionPanel\TranscriptionBackend\obj\Debug\net8.0\Transcript
 C:\Users\ZKB\transcriptionPanel\TranscriptionBackend\obj\Debug\net8.0\TranscriptionBackend.genruntimeconfig.cache
 C:\Users\ZKB\transcriptionPanel\TranscriptionBackend\obj\Debug\net8.0\ref\TranscriptionBackend.dll
 C:\Users\ZKB\transcriptionPanel\TranscriptionBackend\bin\Debug\net8.0\TranscriptionBackend.staticwebassets.runtime.json
+C:\Users\ZKB\transcriptionPanel\TranscriptionBackend\obj\Debug\net8.0\TranscriptionBackend.sourcelink.json
