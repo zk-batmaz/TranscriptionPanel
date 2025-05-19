@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ZKB\\transcriptionPanel\\TranscriptionBackend\\wwwroot\\uploads\\manifest - KTS  Music Video.mp3",
+      "PackagePath": "staticwebassets\\uploads\\manifest - KTS  Music Video.mp3"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TranscriptionBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TranscriptionBackend.props",
+      "PackagePath": "build\\TranscriptionBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TranscriptionBackend.props",
+      "PackagePath": "buildMultiTargeting\\TranscriptionBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TranscriptionBackend.props",
+      "PackagePath": "buildTransitive\\TranscriptionBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+a[mat-button] {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+

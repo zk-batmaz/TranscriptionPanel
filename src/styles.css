@@ -1,0 +1,24 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-input-element {
+  color: #333 !important;
+}
+
+.mat-form-field-label {
+  color: #a2798f !important;
+}
+
+input::placeholder {
+  color: #666 !important;
+}
+
+.mat-form-field-outline {
+  color: #a2798f !important;
+  border-color: #a2798f !important;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  border-color: #a2798f !important;
+  border-width: 2px;
+}

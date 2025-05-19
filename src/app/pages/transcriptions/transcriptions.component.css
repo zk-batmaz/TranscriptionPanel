@@ -1,0 +1,187 @@
+.transcription-wrapper { 
+  padding: 40px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 30px; 
+  background-color: #dfdfde; 
+  min-height: 100vh; 
+  align-items: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+} 
+
+.container { 
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 24px; 
+} 
+
+.search-container { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  margin-bottom: 20px; 
+} 
+
+::ng-deep .filter-input { 
+  width: 100%; 
+  max-width: 400px; 
+  flex: 1; 
+} 
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end,
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick .mat-form-field-outline-end,
+::ng-deep .mdc-notched-outline__trailing,
+::ng-deep .mat-mdc-form-field .mdc-notched-outline__trailing {
+  border-right-width: 1px !important;
+  border-right-style: solid !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  display: flex !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start,
+::ng-deep .mdc-notched-outline__leading {
+  border-right-style: none !important;
+  border-radius: 4px 0 0 4px !important;
+  min-width: 5px !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-gap,
+::ng-deep .mdc-notched-outline__notch {
+  border-right-style: none !important;
+  border-left-style: none !important;
+}
+
+::ng-deep .mat-form-field-outline-end::before,
+::ng-deep .mdc-notched-outline__trailing::before {
+  content: none !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end::after,
+::ng-deep .mdc-notched-outline__trailing::after {
+  content: none !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 0.5em 0 0.5em 0 !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-label,
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+::ng-deep .mat-mdc-text-field-wrapper .mat-mdc-form-field-label {
+  transform: translateY(-1.5em) scale(0.75) !important;
+  background-color: #dfdfde;
+  padding: 0 6px;
+  margin-left: -6px;
+}
+
+::ng-deep .mat-form-field-appearance-outline:not(.mat-form-field-should-float) .mat-form-field-label {
+  top: 1.5em !important;
+  transform: translateY(0) scale(1) !important;
+  background-color: transparent;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label + .mat-input-element::placeholder,
+::ng-deep .mat-mdc-form-field.mat-mdc-form-field-label-above .mat-mdc-input-element::placeholder {
+  opacity: 1 !important;
+  transition: opacity 0.2s 0.1s;
+}
+
+::ng-deep .mat-form-field-appearance-outline:not(.mat-form-field-should-float) .mat-form-field-label + .mat-input-element::placeholder,
+::ng-deep .mat-mdc-form-field:not(.mat-mdc-form-field-label-above) .mat-mdc-input-element::placeholder {
+  opacity: 0 !important;
+}
+
+/* Renk ve stil ayarları */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline,
+::ng-deep .mat-form-field-appearance-outline:not(.mat-form-field-disabled) .mat-form-field-outline,
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start,
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end,
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-gap,
+::ng-deep .mdc-notched-outline__leading,
+::ng-deep .mdc-notched-outline__notch,
+::ng-deep .mdc-notched-outline__trailing { 
+  color: #a2798f !important; 
+  border-color: #a2798f !important;
+  opacity: 1 !important;
+} 
+
+/* Input metni ve label renk ayarları */
+::ng-deep .mat-input-element,
+::ng-deep .mat-form-field .mat-input-element,
+::ng-deep .mat-mdc-input-element { 
+  color: #333333 !important; 
+  font-weight: 500 !important;
+}
+
+::ng-deep .mat-form-field-label,
+::ng-deep .mat-form-field .mat-form-field-label,
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label,
+::ng-deep .mat-mdc-floating-label,
+::ng-deep .mat-mdc-form-field-label { 
+  color: #333333 !important; 
+  font-weight: 500 !important;
+}
+
+/* Placeholder rengi */
+::ng-deep input::placeholder,
+::ng-deep .mat-input-element::placeholder,
+::ng-deep .mat-form-field input::placeholder,
+::ng-deep .mat-mdc-input-element::placeholder { 
+  color: #333333 !important; 
+  opacity: 0.8 !important;
+}
+
+.transcription-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 16px; 
+} 
+
+.transcription-card { 
+  background-color: #ffffff; 
+  padding: 30px; 
+  width: 600px; 
+  border-radius: 16px; 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12); 
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+} 
+
+.audio-player { 
+  width: 100%; 
+} 
+
+.transcription-textarea { 
+  width: 100%; 
+  max-height: 200px; 
+  overflow-y: auto; 
+  padding: 14px; 
+  font-size: 1rem; 
+  border-radius: 12px; 
+  border: 1px solid #ccc; 
+  resize: vertical; 
+  font-family: inherit; 
+  color: #333; 
+  background-color: #f0ecef; 
+  box-sizing: border-box; 
+} 
+
+.save-button { 
+  padding: 14px; 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  border-radius: 12px; 
+  background-color: #a2798f; 
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+} 
+
+.save-button:hover { 
+  background-color: #8caba8; 
+}

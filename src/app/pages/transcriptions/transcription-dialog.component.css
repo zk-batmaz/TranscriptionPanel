@@ -1,0 +1,43 @@
+.transcription-card {
+  background-color: #ffffff;
+  padding: 30px;
+  width:fit-content;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.transcription-textarea {
+  width: 100%;
+  max-height:fit-content;
+  overflow-y: auto;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-family: inherit;
+  color: #333;
+  background-color: #f0ecef;
+  box-sizing: border-box;
+}
+
+.audio-player {
+  width: 100%;
+}
+
+.save-button {
+  padding: 14px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  background-color: #a2798f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #8caba8;
+}

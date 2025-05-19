@@ -1,0 +1,38 @@
+<div class="transcription-wrapper">
+  <!-- Add Transcription -->
+<button mat-raised-button color="accent" (click)="openAddDialog()">➕ Add</button>
+
+  <hr />
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <mat-form-field appearance="outline" class="filter-input">
+      <mat-label>Search in Transcription</mat-label>
+      <input matInput [(ngModel)]="filterText" placeholder="Transkripsiyon ara..." />
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="applyFilter()">Search</button>
+  </div>
+
+  <!-- List -->
+  <ng-container *ngIf="filteredTranscriptions.length > 0; else noData">
+    <div class="transcription-card" *ngFor="let item of filteredTranscriptions">
+      <div>
+        <strong>ID:</strong> {{ item.id }}
+      </div>
+      <textarea
+        class="transcription-textarea"
+        [(ngModel)]="item.updatedText"
+        rows="4"
+      ></textarea>
+
+      <audio class="audio-player" [src]="item.audioUrl" controls></audio>
+      <button class="save-button" (click)="saveTranscription(item)">Save</button>
+    </div>
+  </ng-container>
+
+  <ng-template #noData>
+    <div class="transcription-card">
+      <p>No matching transcription found.</p>
+    </div>
+  </ng-template>
+</div>

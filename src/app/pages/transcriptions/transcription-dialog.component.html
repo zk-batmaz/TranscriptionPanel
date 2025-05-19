@@ -1,0 +1,14 @@
+<div class="transcription-card">
+  <textarea
+    class="transcription-textarea"
+    [(ngModel)]="newText"
+    placeholder="Enter transcript text"
+    rows="4"
+  ></textarea>
+
+  <input type="file" (change)="onFileSelected($event)" accept="audio/*" />
+
+  <audio *ngIf="audioUrl" class="audio-player" controls [src]="audioUrl"></audio>
+
+  <button class="save-button" (click)="addTranscription()">Save</button>
+</div>

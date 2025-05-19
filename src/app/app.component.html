@@ -1,0 +1,29 @@
+<!-- Debug
+<div *ngIf="authService.isLoggedIn()" style="background-color: #f0f0f0; padding: 10px; font-size: 12px;">
+  Giriş durumu: {{ authService.isLoggedIn() ? 'Giriş yapıldı' : 'Giriş yapılmadı' }}<br>
+  Admin mi: {{ authService.isAdmin() ? 'Evet' : 'Hayır' }}<br>
+  Rol: {{ authService.getRole() || 'Rol yok' }}
+</div>
+-->
+<mat-toolbar color="primary">
+  <span>Transcription Panel</span>
+  <span style="flex: 1 1 auto;"></span>
+
+  <!-- Giriş yapılmışsa -->
+  <ng-container *ngIf="authService.isLoggedIn()">
+    <!-- Admin için -->
+    <ng-container *ngIf="authService.isAdmin()">
+      <a mat-button routerLink="/transcriptions">Transcriptions</a>
+      <a mat-button routerLink="/activities">User Activities</a>
+      <a mat-button routerLink="/users">Users</a>
+      <a mat-button (click)="logout()">Logout</a>
+    </ng-container>
+
+    <!-- Editor için sadece Çıkış Yap -->
+    <ng-container *ngIf="!authService.isAdmin()">
+      <a mat-button (click)="logout()">Logout</a>
+    </ng-container>
+  </ng-container>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

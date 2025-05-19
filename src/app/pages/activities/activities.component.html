@@ -1,0 +1,17 @@
+<div class="transcription-wrapper">
+  <h2>Aktivite Geçmişi</h2>
+
+  <ng-container *ngIf="activities.length > 0; else noData">
+    <div class="transcription-card" *ngFor="let activity of activities">
+        <div><strong>Kullanıcı ID:</strong> {{ activity.userId }}</div>
+        <div><strong>İşlem Türü:</strong> {{ activity.action }}</div>
+        <div><strong>Tarih:</strong> {{ activity.timestamp | date:'short' }}</div>
+    </div>
+  </ng-container>
+
+  <ng-template #noData>
+    <div class="transcription-card">
+      <p>📭 Henüz bir aktivite bulunamadı.</p>
+    </div>
+  </ng-template>
+</div>
